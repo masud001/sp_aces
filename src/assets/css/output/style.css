@@ -630,6 +630,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 40px;
 }
 
+.h-\[65px\] {
+  height: 65px;
+}
+
 .min-h-\[320px\] {
   min-height: 320px;
 }
@@ -648,6 +652,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .w-\[40px\] {
   width: 40px;
+}
+
+.w-\[65px\] {
+  width: 65px;
 }
 
 .min-w-\[210px\] {
@@ -799,6 +807,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-\[\#1E1E41\] {
   --tw-bg-opacity: 1;
   background-color: rgb(30 30 65 / var(--tw-bg-opacity));
+}
+
+.object-cover {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.object-fill {
+  -o-object-fit: fill;
+     object-fit: fill;
 }
 
 .p-4 {
