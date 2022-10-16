@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.nav_link {
+		@apply text-[#D7D7F5] hover:text-[#FEDD00] transition-colors text-[14px] sm:text-[18px] font-medium;
+	}
+}

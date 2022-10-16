@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.menu__list {
+		@apply text-base md:text-[13px] lg:text-base capitalize inline-block font-medium px-4 md:px-2 py-2 md:py-1 lg:px-4 lg:py-2 rounded-md lg:rounded-none  border-b-2 border-transparent text-gray-500  w-full;
+	}
+	.dropdown__list {
+		@apply text-base md:text-[13px] lg:text-base capitalize inline-flex justify-between md:py-1 lg:px-4 lg:py-2  font-medium px-4 py-2 rounded-md lg:rounded-none  border-b-2 border-transparent text-gray-500 w-full;
+	}
+	.sub_dropdown__list {
+		@apply text-base md:text-[13px] lg:text-base capitalize inline-flex justify-between md:py-1 lg:px-4 lg:py-2 font-medium px-4 py-2 rounded-md lg:rounded-none  border-b-2 border-transparent text-gray-500 hover:border-b-2 w-full;
+	}
+}

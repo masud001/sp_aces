@@ -1,0 +1,89 @@
+.scroll-indicator {
+	margin-top: auto;
+}
+
+.scroll-indicator span {
+	display: block;
+	overflow: hidden;
+}
+
+.scroll-indicator span span {
+	-webkit-animation: scroll-animate 3s ease-in infinite;
+	animation: scroll-animate 3s ease-in infinite;
+}
+
+@-webkit-keyframes scroll-animate {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	30%,
+	70% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+@keyframes scroll-animate {
+	0% {
+		transform: translateY(-100%);
+	}
+
+	30%,
+	70% {
+		transform: translateY(0);
+	}
+
+	100% {
+		transform: translateY(100%);
+	}
+}
+
+.toggle_button {
+	height: 32px;
+	width: 32px;
+	border-radius: 50%;
+	border: none;
+
+	background-image: url('../image/dot-menu.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 4px 16px;
+	cursor: pointer;
+	transition: 0.3s ease-out;
+}
+.toggle_button:hover {
+	background-color: #46465f;
+}
+.toggle_button.active {
+	background-image: url('../image/menu-back.svg');
+	background-size: 14px;
+	background-color: #46465f;
+}
+.toggle_menu {
+	visibility: hidden;
+	z-index: -9999;
+}
+.toggle_menu.active {
+	visibility: visible;
+	z-index: 1;
+}
+
+/* how it works  */
+.carousel {
+	overflow-x: auto;
+}
+@supports (touch-action: pan-y) {
+	.carousel {
+		overflow: unset;
+		touch-action: pan-y;
+	}
+}
+.carousel .transformer {
+	width: -webkit-max-content;
+	width: -moz-max-content;
+	width: max-content;
+}

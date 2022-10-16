@@ -1,0 +1,25 @@
+{
+	"name": "A little Sp_ACES",
+	"version": "1.0.0",
+	"description": "Nutritions monitoring website for Bangladesh Government.",
+	"main": "index.js",
+	"scripts": {
+		"tailwind": "npx tailwindcss -i ./src/assets/css/input/style.css -o ./src/assets/css/output/style.css --watch"
+	},
+	"repository": {
+		"type": "git",
+		"url": ""
+	},
+	"author": "Masudur Rahman",
+	"license": "ISC",
+	"bugs": {
+		"url": "issues"
+	},
+	"homepage": "readme",
+	"devDependencies": {
+		"tailwindcss": "^3.0.23"
+	},
+	"dependencies": {
+		"alpinejs": "^3.9.0"
+	}
+}
