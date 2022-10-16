@@ -71,7 +71,10 @@
 	visibility: visible;
 	z-index: 1;
 }
-
+.see_all:hover {
+	border: 2px solid #fedd00;
+	color: #fedd00;
+}
 /* how it works  */
 .carousel {
 	overflow-x: auto;
@@ -86,4 +89,23 @@
 	width: -webkit-max-content;
 	width: -moz-max-content;
 	width: max-content;
+}
+
+@media screen and (min-width: 320px) {
+	.slider-1 > div {
+		display: flex;
+		flex-direction: column !important;
+		gap: 25px 0;
+	}
+}
+
+@media screen and (min-width: 400px) {
+	.slider-1 > div {
+		display: flex;
+		flex-direction: row !important;
+		gap: 0 50px;
+	}
+	.slider-1 .single-card {
+		width: 500px;
+	}
 }
