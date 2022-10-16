@@ -590,6 +590,22 @@ Ensure the default browser behavior of the `hidden` attribute.
   bottom: 2.75rem;
 }
 
+.top-0 {
+  top: 0px;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.right-0 {
+  right: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
+}
+
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -632,6 +648,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[65px\] {
   height: 65px;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.h-\[320px\] {
+  height: 320px;
 }
 
 .min-h-\[320px\] {
